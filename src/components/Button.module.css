@@ -1,0 +1,13 @@
+.button {
+  height: 50px;
+  background-color: var(--Vinho);
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+.button:hover {
+  opacity: .9;
+}

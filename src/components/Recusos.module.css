@@ -7,7 +7,7 @@
 }
 
 .FormRecurso {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.206), rgba(255, 255, 255, 0.159));
+  background: var(--Vidro);
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -17,21 +17,11 @@
     flex-direction: column;
     gap: 1rem;
 
-    & button {
-      height: 50px;
-      background-color: var(--Vinho);
-      font-size: 1.3em;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    & button:hover {
-      opacity: .9;
-    }
+    
   }
   & p {
-      margin-top: 1rem;
-    }
+    margin-top: 1rem;
+  }
   & .alerta {
     color: var(--Alerta);
   }

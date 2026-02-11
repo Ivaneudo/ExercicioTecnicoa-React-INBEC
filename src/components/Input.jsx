@@ -4,7 +4,7 @@ const Input = (props) => {
   return (
     <label className={style.label}>
       <span>{props.label}</span>
-      <input type="Number" placeholder={props.placeholder} value={props.value}/>
+      <input type={props.type} placeholder={props.placeholder} value={props.value}/>
     </label>
   )
 }

@@ -4,6 +4,7 @@
   --Alerta: #ff0808;
   --Atencao: #ffff00;
   --Estavel: #00ff00;
+  --Vidro: linear-gradient(135deg, rgba(255, 255, 255, 0.206), rgba(255, 255, 255, 0.159));
 }
 
 * {

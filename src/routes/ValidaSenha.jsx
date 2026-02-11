@@ -1,8 +1,10 @@
-import React from 'react'
+import Senha from "../components/Senha.jsx"
 
 const ValidaSenha = () => {
   return (
-    <div>ValidaSenha</div>
+    <div>
+      <Senha />
+    </div>
   )
 }
 
