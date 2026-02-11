@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import style from'./App.module.css';
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx"
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
       <div className={style.Container}>
         <NavBar />
         <Outlet />
-        <h2>roda pé</h2>
+        <Footer />
       </div>
     </>
   )

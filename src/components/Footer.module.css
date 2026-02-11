@@ -1,0 +1,31 @@
+.footer {
+  background-color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 0;
+  color: var(--Azul);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  & .list {
+    display: flex;
+    gap: 20rem;
+
+    & ul {
+      width: 500px;
+      list-style: none;
+
+      & li {
+        text-align: justify;
+        font-size: 1.2rem;
+      }
+
+      & .title {
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+    }
+  }
+}
