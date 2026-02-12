@@ -38,7 +38,7 @@ const Cash = () => {
               {produtos.map((produto, index) => (
                 <tr key={index}>
                   <td>R$ {produto.liquido + produto.cashBack}</td>
-                  <td>R$ {produto.cashBack}</td>
+                  <td>R$ {produto.cashBack.toFixed(2)}</td>
                 </tr>
               ))}
             </tbody>
@@ -47,11 +47,11 @@ const Cash = () => {
           <div className={style.resumo}>
             <div className={style.linha}>
               <span>Valor Líquido:</span>
-              <span>R$ {totalLiquido}</span>
+              <span>R$ {totalLiquido.toFixed(2)}</span>
             </div>
             <div className={style.linha}>
               <span>Total CashBack:</span>
-              <span>R$ {totalCashBack}</span>
+              <span>R$ {totalCashBack.toFixed(2)}</span>
             </div>
           </div>
         </div>

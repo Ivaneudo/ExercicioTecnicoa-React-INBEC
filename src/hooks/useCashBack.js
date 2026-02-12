@@ -8,7 +8,7 @@ const useCashBack = () => {
 
     const form = e.target.closest('form');
     const inputs = form.querySelectorAll('input');
-    const valor = Number(inputs[0].value);
+    const valor = parseFloat(inputs[0].value.replace(',', '.'));
     let cashBack = 0;
 
     if (valor > 100) {
@@ -21,6 +21,8 @@ const useCashBack = () => {
     const produto = {liquido, cashBack};
     
     setProtudos([...produtos, produto]);
+
+    inputs[0].value = "";
   }
 
   const totalLiquido = produtos.reduce((acc, p) => acc + p.liquido, 0);
