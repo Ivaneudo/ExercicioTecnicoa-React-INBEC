@@ -7,7 +7,7 @@ const Footer = () => {
           <ul>
           <li className={style.title}>Contatos: </li>
           <li>E-mail: ivaneudo.dev@gmail.com</li>
-          <li>Linkedin: <a href="https:www.linkedin.com/in/ivaneudo-carvalho" target="_blank">/Ivaneudo</a></li>
+          <li>Linkedin: <a href="https:linkedin.com/in/ivaneudo-carvalho" target="_blank">/Ivaneudo</a></li>
           <li>GitHub: <a href="https://github.com/Ivaneudo" target="_blank">/Ivaneudo</a></li>
         </ul>
         <ul>
