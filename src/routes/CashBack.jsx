@@ -1,8 +1,8 @@
-import React from 'react'
+import Cash from "../components/Cash.jsx"
 
 const CashBack = () => {
   return (
-    <div>CashBack</div>
+    <Cash />
   )
 }
 
