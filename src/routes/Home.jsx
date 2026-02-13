@@ -2,9 +2,11 @@ import Title from "../components/Title.jsx"
 
 const Home = () => {
   return (
-    <>
-      <Title />
-    </>
+    <div className="Title">
+      <Title 
+        text = "Desafio Técnico - INBEC - Shark-School 2026"
+      />
+    </div>
   )
 }
 

@@ -1,9 +1,9 @@
 import style from "./Title.module.css";
 
-const Title = () => {
+const Title = (props) => {
   return (
     <div className={style.title}>
-      <h1>Desafio Técnico - INBEC - Shark-School 2026</h1>
+      <h1>{props.text}</h1>
     </div>
   )
 }

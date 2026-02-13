@@ -13,24 +13,27 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
       {
         path: "recursosservido",
-        element: <RecursosServido />
+        element: <RecursosServido />,
       },
       {
         path: "validasenha",
-        element: <ValidaSenha />
+        element: <ValidaSenha />,
       },
       {
         path: "cashback",
-        element: <CashBack />
+        element: <CashBack />,
       },
+      {
+        path: "*",
+        element: <ErrorPage />
+      }
     ]
   }
 ])
@@ -38,5 +41,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 )
