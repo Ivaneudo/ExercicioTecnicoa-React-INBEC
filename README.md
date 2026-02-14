@@ -2,7 +2,7 @@
 
 ## Comandos:
 
-- Site Opestadado (não responsivo)
+- Site Opestadado
   - https://exercicio-tecnicoa-react-inbec.vercel.app/
 - Instação:
   - Para instalar as dependencias rode: npm i
