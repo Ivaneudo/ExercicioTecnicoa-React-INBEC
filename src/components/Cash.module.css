@@ -37,6 +37,7 @@
   height: 300px; /* ou o tamanho que você definiu */
   display: flex;
   flex-direction: column;
+  width: 278px;
 
   & .content {
     display: flex;
@@ -97,3 +98,4 @@
   }
 }
 }
+

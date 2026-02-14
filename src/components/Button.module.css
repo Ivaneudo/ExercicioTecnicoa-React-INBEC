@@ -11,3 +11,27 @@
 .button:hover {
   opacity: .9;
 }
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+  .button {
+    height: 45px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+  .button {
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* Celulares pequenos (até 360px) */
+@media (max-width: 360px) {
+  .button {
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}

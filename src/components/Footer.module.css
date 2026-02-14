@@ -34,3 +34,84 @@
     }
   }
 }
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer .list {
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  .footer .list ul {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+
+  .footer .list ul li {
+    font-size: 1rem;
+    text-align: center; /* centraliza em telas menores */
+  }
+
+  .footer .list ul .title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 0.5rem;
+    gap: 1rem;
+  }
+
+  .footer .list {
+    gap: 2rem;
+  }
+
+  .footer .list ul {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .footer .list ul li {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .footer .list ul li a {
+    font-size: 0.9rem;
+  }
+
+  .footer .list ul .title {
+    font-size: 1rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Celulares pequenos (até 360px) */
+@media (max-width: 360px) {
+  .footer {
+    padding: 1rem 0.3rem;
+  }
+
+  .footer .list ul li {
+    font-size: 0.8rem;
+  }
+
+  .footer .list ul .title {
+    font-size: 0.9rem;
+  }
+
+  .footer p {
+    font-size: 0.7rem;
+  }
+}

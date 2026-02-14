@@ -1,26 +1,65 @@
 .title {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100vh; /* padrão desktop */
   align-items: center;
   justify-content: center;
-  font-size: 1.5em;
+  padding: 2rem 1rem;
 }
 
 .title h1 {
   width: fit-content;
+  max-width: 90%;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid #fff;
   animation: typing 3s steps(40, end), blink-cursor 0.75s step-end infinite;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 80%; }
+  to { width: 40%; }
 }
 
 @keyframes blink-cursor {
   from, to { border-color: transparent; }
   50% { border-color: #fff; }
+}
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+  .title {
+    height: auto; /* remove altura fixa */
+    min-height: calc(100vh - 180px); /* só aplica aqui */
+    padding: 1.5rem;
+  }
+  
+  .title h1 {
+    font-size: 1.3rem;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    max-width: 100%;
+    margin-right: 2rem;
+  }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+  .title {
+    height: auto;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .title h1 {
+    font-size: 1.1rem;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    line-height: 1.4;
+  }
 }

@@ -30,3 +30,58 @@
   }
 }
 
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+  .senha {
+    padding: 60px 1rem 1rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .senha .pass {
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+
+  .senha .pass p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+  .senha {
+    padding: 60px 0.8rem 0.8rem;
+  }
+
+  .senha .pass {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem;
+  }
+
+  .senha .pass p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .senha .pass .alertaSpan {
+    display: block;
+    margin-top: 0.3rem;
+    font-weight: bold;
+  }
+}
+
+/* Celulares pequenos (até 360px) */
+@media (max-width: 360px) {
+  .senha .pass {
+    max-width: 280px;
+    padding: 0.8rem;
+  }
+
+  .senha .pass p {
+    font-size: 0.85rem;
+  }
+}

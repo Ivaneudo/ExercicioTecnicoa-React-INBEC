@@ -29,3 +29,52 @@
     border: none;
   }
 }
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+  .label {
+    gap: 0.8rem;
+  }
+
+  .label span {
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .label input {
+    height: 45px;
+    font-size: 1rem;
+    padding: 0 0 0 0.8rem;
+  }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+  .label {
+    gap: 0.5rem;
+  }
+
+  .label span {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .label input {
+    height: 40px;
+    font-size: 0.95rem;
+    padding: 0 0 0 0.6rem;
+  }
+}
+
+/* Celulares pequenos (até 360px) */
+@media (max-width: 360px) {
+  .label span {
+    font-size: 0.9rem;
+  }
+
+  .label input {
+    height: 35px;
+    font-size: 0.85rem;
+    padding: 0 0 0 0.5rem;
+  }
+}

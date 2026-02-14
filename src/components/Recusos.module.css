@@ -32,3 +32,62 @@
     color: var(--Estavel);
   }
 }
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+  .PegaRecurso {
+    padding: 1rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .FormRecurso {
+    width: 90%;
+    max-width: 500px;
+    padding: 1.5rem;
+  }
+
+  .FormRecurso form {
+    gap: 1.2rem;
+  }
+
+  .FormRecurso p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .PegaRecurso {
+    padding: 1rem;
+    align-items: center; /* volta a centralizar */
+    padding-top: 60px; /* reduz o espaço */
+    min-height: 100vh;
+  }
+
+  .FormRecurso {
+    width: 100%;
+    max-width: 350px; /* limita largura */
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+
+  .FormRecurso form {
+    gap: 0.8rem;
+  }
+
+  .FormRecurso p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}
+/* Celulares pequenos (até 360px) */
+@media (max-width: 360px) {
+  .FormRecurso {
+    padding: 0.8rem;
+  }
+
+  .FormRecurso p {
+    font-size: 0.9rem;
+  }
+}
