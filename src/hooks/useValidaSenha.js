@@ -39,7 +39,7 @@ const useValidaSenha = () => {
     const quantidade = senha.length;
 
     if (numero) {
-      if (quantidade < 9) {
+      if (quantidade < 8) {
         return false;
       }
     }
