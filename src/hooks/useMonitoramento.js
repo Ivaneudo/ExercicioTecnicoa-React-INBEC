@@ -19,7 +19,7 @@ const useMonitoramento = () => {
     if (cpu >= 80 && ram >= 80) {
       alertaRef.current.classList.add(style.alerta);
       return setMsg(`ALERTA: Sistema Sobrecarregado.`);
-    } else if (cpu <=50 && ram <= 50) {
+    } else if (cpu < 50 && ram < 50) {
       alertaRef.current.classList.add(style.estavel);
       return setMsg(`Sistema Estável.`);
     } else {
